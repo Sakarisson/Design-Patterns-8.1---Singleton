@@ -126,6 +126,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Action.h" />
+    <ClInclude Include="ActionFactory.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameFactory.h" />
     <ClInclude Include="NastyGameFactory.h" />
