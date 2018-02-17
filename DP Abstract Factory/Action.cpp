@@ -1,9 +1,8 @@
-#include "Action.h"
+/*
+   File:        Action.cpp
+   Objective:	Designmönster DT063G - Abstract Factory
+   Last change: feb 2014 / Orjan Sterner
+*/
 
-Action::Action() {
 
-}
-
-Action::~Action() {
-
-}
+// Empty file

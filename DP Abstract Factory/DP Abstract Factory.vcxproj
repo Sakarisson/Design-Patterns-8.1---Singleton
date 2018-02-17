@@ -116,14 +116,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Action.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameFactory.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="NastyGameFactory.cpp" />
+    <ClCompile Include="NiceGameFactory.cpp" />
     <ClCompile Include="Obstacle.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="testLab4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Action.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="GameFactory.h" />
+    <ClInclude Include="NastyGameFactory.h" />
+    <ClInclude Include="NiceGameFactory.h" />
     <ClInclude Include="Obstacle.h" />
     <ClInclude Include="Player.h" />
   </ItemGroup>

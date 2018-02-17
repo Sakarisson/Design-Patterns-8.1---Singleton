@@ -1,10 +1,13 @@
+/*
+   File:        GameFactory.cpp
+   Objective:	Designmönster DT063G - Abstract Factory
+   Last change: feb 2014 / Orjan Sterner
+*/
+
+
+
 #include "GameFactory.h"
+#include "Obstacle.h"
+#include "Action.h"
 
-GameFactory::GameFactory() {
-
-}
-
-
-GameFactory::~GameFactory() {
-
-}
+/* Implementationer av konkreta factoryklasser */
