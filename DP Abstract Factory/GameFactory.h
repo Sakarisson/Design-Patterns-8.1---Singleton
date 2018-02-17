@@ -11,8 +11,8 @@
 #include <vector>
 #include <string>
 
-using std::vector;
-using std::string;
+//using std::vector;
+//using std::string;
 
 class Player;
 class Obstacle;
@@ -29,7 +29,10 @@ protected:
 public:
 	virtual ~GameFactory() = default;
    // Lämpliga operationer: se klassen Game.
-
+    virtual std::vector<Obstacle*> getObstacles() = 0;
+    virtual std::vector<Action*> getActions() = 0;
+    // virtual Player* getPlayer() = 0;
+    virtual std::string getTitle() const = 0;
 };
 
 

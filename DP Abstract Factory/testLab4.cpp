@@ -8,6 +8,8 @@
 #include <iostream>
 #include <cstdlib>
 #include "Game.h"
+#include "NiceGameFactory.h"
+#include "NastyGameFactory.h"
 
 using std::cin;
 
@@ -30,8 +32,8 @@ int main() {
         }
 
         switch(choice) {
-          case 1:  gf = Ett factory-objekt ; break;
-          case 2:  gf = Ett annat factory-objekt; break;
+          case 1:  gf = new NiceGameFactory() ; break;
+          case 2:  gf = new NastyGameFactory(); break;
           case 3: keepOn=false;
         }
 

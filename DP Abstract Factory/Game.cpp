@@ -27,6 +27,10 @@ Game::Game(GameFactory *gFact) {
   setGameTitle:
   - ge title ett passande värde
  */
+    obstacles = gFact->getObstacles();
+    actions = gFact->getActions();
+    // player = gFact->getPlayer();
+    title = gFact->getTitle();
 }
 
 Game::~Game() {
