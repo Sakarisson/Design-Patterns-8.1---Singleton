@@ -31,7 +31,7 @@ public:
    // Lämpliga operationer: se klassen Game.
     virtual std::vector<Obstacle*> getObstacles() = 0;
     virtual std::vector<Action*> getActions() = 0;
-    // virtual Player* getPlayer() = 0;
+    virtual Player* getPlayer() = 0;
     virtual std::string getTitle() const = 0;
 };
 

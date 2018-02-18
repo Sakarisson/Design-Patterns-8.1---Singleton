@@ -29,7 +29,7 @@ Game::Game(GameFactory *gFact) {
  */
     obstacles = gFact->getObstacles();
     actions = gFact->getActions();
-    // player = gFact->getPlayer();
+    player = gFact->getPlayer();
     title = gFact->getTitle();
 }
 

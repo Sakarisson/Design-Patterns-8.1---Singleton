@@ -2,6 +2,10 @@
 #define NASTYGAMEFACTORY_H
 
 #include "GameFactory.h"
+#include "Obstacle.h"
+#include "Action.h"
+#include "Player.h"
+
 class NastyGameFactory : public GameFactory {
 public:
     NastyGameFactory();
@@ -9,7 +13,7 @@ public:
 
     std::vector<Obstacle*> getObstacles() override;
     std::vector<Action*> getActions() override;
-    // Player* getPlayer() override;
+    Player* getPlayer() override;
     std::string getTitle() const override;
 };
 

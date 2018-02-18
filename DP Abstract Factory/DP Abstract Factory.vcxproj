@@ -126,13 +126,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Action.h" />
-    <ClInclude Include="ActionFactory.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameFactory.h" />
     <ClInclude Include="NastyGameFactory.h" />
     <ClInclude Include="NiceGameFactory.h" />
     <ClInclude Include="Obstacle.h" />
-    <ClInclude Include="ObstacleFactory.h" />
     <ClInclude Include="Player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
