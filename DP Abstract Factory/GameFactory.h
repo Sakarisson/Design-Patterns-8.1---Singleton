@@ -22,11 +22,20 @@ class Action;
 // GameFactory är en abstrakt klass som definierar ett interface för
 // deriverade konkreta klasser
 
-class GameFactory {
+template <typename Class>
+struct GameFactory {
 protected:
-  GameFactory() { }
+    GameFactory() {
+        if (_instance == nullptr) {
+            _instance = (Class*)this;
+        }
+    }
+    static Class* _instance; 
 
 public:
+    static inline Class& instance() {
+        return *_instance;
+    }
 	virtual ~GameFactory() = default;
    // Lämpliga operationer: se klassen Game.
     virtual std::vector<Obstacle*> getObstacles() = 0;
@@ -34,6 +43,9 @@ public:
     virtual Player* getPlayer() = 0;
     virtual std::string getTitle() const = 0;
 };
+
+template <typename Class>
+Class* GameFactory<Class>::_instance = nullptr;
 
 
 /* NiceGameFactory:

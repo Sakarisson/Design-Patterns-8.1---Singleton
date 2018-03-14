@@ -8,7 +8,7 @@
 
 class NiceGameFactory :public GameFactory {
 public:
-    NiceGameFactory();
+    GameFactory* instance() override;
     ~NiceGameFactory();
 
     std::vector<Obstacle*> getObstacles() override;
