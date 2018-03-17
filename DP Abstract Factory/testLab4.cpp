@@ -13,6 +13,9 @@
 
 using std::cin;
 
+NiceGameFactory*  NiceGameFactory::_instance = nullptr;
+NastyGameFactory*  NastyGameFactory::_instance = nullptr;
+
 int main() {
 
     int choice;
@@ -32,8 +35,8 @@ int main() {
         }
 
         switch(choice) {
-          case 1:  gf = new NiceGameFactory() ; break;
-          case 2:  gf = new NastyGameFactory(); break;
+        case 1:  gf = NiceGameFactory::getInstance(); break;
+          case 2:  gf = NastyGameFactory::getInstance(); break;
           case 3: keepOn=false;
         }
 

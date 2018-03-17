@@ -8,13 +8,22 @@
 
 class NiceGameFactory :public GameFactory {
 public:
-    GameFactory* instance() override;
     ~NiceGameFactory();
 
     std::vector<Obstacle*> getObstacles() override;
     std::vector<Action*> getActions() override;
     Player* getPlayer() override;
     std::string getTitle() const override;
+
+    static NiceGameFactory* getInstance() {
+        if (_instance == nullptr) {
+            _instance = new NiceGameFactory();
+        }
+        return _instance;
+    }
+private:
+    NiceGameFactory() {}
+    static NiceGameFactory* _instance;
 };
 
 #endif
