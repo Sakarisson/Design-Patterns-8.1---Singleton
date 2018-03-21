@@ -13,9 +13,6 @@
 
 using std::cin;
 
-NiceGameFactory*  NiceGameFactory::_instance = nullptr;
-NastyGameFactory*  NastyGameFactory::_instance = nullptr;
-
 int main() {
 
     int choice;
@@ -43,7 +40,6 @@ int main() {
         if(keepOn) {
           Game game(gf);
           game.play();
-          delete gf;
         }
     } // while
 

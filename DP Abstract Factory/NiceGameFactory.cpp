@@ -1,5 +1,7 @@
 #include "NiceGameFactory.h"
 
+NiceGameFactory*  NiceGameFactory::_instance = nullptr;
+
 NiceGameFactory::~NiceGameFactory() {
 
 }

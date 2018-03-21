@@ -1,5 +1,7 @@
 #include "NastyGameFactory.h"
 
+NastyGameFactory*  NastyGameFactory::_instance = nullptr;
+
 NastyGameFactory::~NastyGameFactory() {
 
 }
